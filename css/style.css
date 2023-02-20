@@ -1,0 +1,51 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: rgb(5, 5, 60);
+}
+
+.appInfo {
+    padding: 30px 0px;
+    color: white;
+}
+
+.appInfo h1 {
+    font-weight: bold;
+    padding: 10px;
+    border-bottom: 2px solid rgb(255, 190, 0);
+}
+
+.appNewDesc {
+    padding: 10px;
+}
+
+.appNewDesc h3 {
+    font-weight: bold;
+    padding-bottom: 8px;
+}
+
+.appMap {
+    justify-content: center;
+    padding: 30px 10px;
+}
+
+svg {
+    height: 90vh;
+}
+
+path {
+    stroke: white;
+    fill: transparent;
+    cursor: pointer;
+    transition: 0.6s;
+}
+
+path:hover {
+    fill: rgb(255, 190, 0);
+    filter: drop-shadow(0px 0px 6px rgb(255, 255, 255, 0.8));
+    transform: translate(-6px, -6px);
+}
