@@ -13,19 +13,23 @@
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
         crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/0c8787c5b8.js" crossorigin="anonymous"></script>
+    <script src="./js/main.js" defer></script>
 
     <title>台灣即時天氣地圖</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"></script>
 </head>
 
 <body>
     <div class="container">
-        <main class="row">
+        <div class="row" id="appWeather">
             <section class="col-12 col-lg-5 appInfo">
                 <h1>台灣<br>即時天氣地圖</h1>
                 <div class="appNewDesc">
-                    <h3>台北市</h3>
-                    <p>20&nbsp;℃～30&nbsp;℃&nbsp;｜&nbsp;<i class="fa-solid fa-umbrella"></i>&nbsp;66％</p>
-                    <p>晴時多雲</p>
+                    <h2>{{ place }}</h2>
+                    <h4 class="newText1">{{ low }}&nbsp;℃～{{ high }}&nbsp;℃</h4>
+                    <h4 class="newText2"><i class="fa-solid fa-umbrella"></i>&nbsp;{{ rain }}％</h4>
+                    <h2>{{ weather }}</h2>
                 </div>
             </section>
             <section class="col-12 col-lg-7 appMap">
@@ -128,8 +132,24 @@
                     </circle>
                 </svg>
             </section>
-        </main>
+        </div>
     </div>
+
+    <!-- <script>
+
+        let appWeather = new Vue({
+            el: "#appWeather",
+            data: {
+                tag: "taichung_city",
+                place: "台中市",
+                low: 15,
+                high: 22,
+                rain: 45,
+                weather: "晴時多雲"
+            }
+        })
+
+    </script> -->
 </body>
 
 </html>
