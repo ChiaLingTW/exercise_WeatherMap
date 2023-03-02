@@ -15,18 +15,27 @@ body {
 
 .appInfo h1 {
     font-weight: bold;
-    padding: 10px;
+    text-shadow: 2px 2px 8px rgb(255, 190, 0);
+}
+
+.appTitle {
+    text-align: right;
     border-bottom: 2px solid rgb(255, 190, 0);
 }
 
+.appTitle p {
+    font-size: 18px;
+    text-shadow: 2px 2px 5px rgb(255, 190, 0);
+}
+
 .appNewDesc {
-    padding: 10px;
+    padding: 10px 0px;
 }
 
 .appNewDesc h2,
 .appNewDesc h4 {
     font-weight: bold;
-    padding-bottom: 10px;
+    padding: 10px 0px;
 }
 
 .newText1 {
@@ -34,7 +43,7 @@ body {
 }
 
 .newText2 {
-    color: rgb(0, 190, 255);
+    color: rgb(0, 234, 255);
 }
 
 .appMap {
